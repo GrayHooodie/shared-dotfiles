@@ -26,11 +26,11 @@ source $BYOBU_PREFIX/share/byobu/keybindings/f-keys.tmux.disable
 
 # Byobu's Keybindings
 # Documented in: $BYOBU_PREFIX/share/doc/byobu/help.tmux.txt
-bind-key -n F1 new-window -n help "sh -c 'LESS=\"\" $BYOBU_PAGER $BYOBU_PREFIX/share/doc/byobu/help.tmux.txt'"
+bind-key -n M-c new-window -n help "sh -c 'LESS=\"\" $BYOBU_PAGER $BYOBU_PREFIX/share/doc/byobu/help.tmux.txt'"
 bind-key -n S-F1 new-window -n help "sh -c 'LESS=\"\" $BYOBU_PAGER $BYOBU_PREFIX/share/doc/byobu/help.tmux.txt'"
 bind-key -n F2 new-window -c "#{pane_current_path}" \; rename-window "-"
-bind-key -n C-F2 display-panes \; split-window -h -c "#{pane_current_path}"
-bind-key -n S-F2 display-panes \; split-window -v -c "#{pane_current_path}"
+bind-key -n M-S-s display-panes \; split-window -h -c "#{pane_current_path}"
+bind-key -n M-s display-panes \; split-window -v -c "#{pane_current_path}"
 bind-key -n C-S-F2 new-session \; rename-window "-"
 bind-key -n F3 previous-window
 bind-key -n F4 next-window
@@ -48,15 +48,15 @@ bind-key -n C-F3 display-panes \; swap-pane -s :. -t :.- \; select-pane -t :.-
 bind-key -n C-F4 display-panes \; swap-pane -s :. -t :.+ \; select-pane -t :.+
 bind-key -n C-S-F3 swap-window -t :-1 -d
 bind-key -n C-S-F4 swap-window -t :+1 -d
-bind-key -n M-S-Up resize-pane -U
-bind-key -n M-S-Down resize-pane -D
-bind-key -n M-S-Left resize-pane -L
-bind-key -n M-S-Right resize-pane -R
+bind-key -n C-M-S-k resize-pane -U
+bind-key -n C-M-S-j resize-pane -D
+bind-key -n C-M-S-h resize-pane -L
+bind-key -n C-M-S-l resize-pane -R
 bind-key -n F5 source $BYOBU_PREFIX/share/byobu/profiles/tmuxrc
 bind-key -n M-F5 run-shell '$BYOBU_PREFIX/lib/byobu/include/toggle-utf8' \; source $BYOBU_PREFIX/share/byobu/profiles/tmuxrc
 bind-key -n S-F5 new-window "$BYOBU_PREFIX/lib/byobu/include/cycle-status" \; source $BYOBU_PREFIX/share/byobu/profiles/tmuxrc
 bind-key -n C-F5 send-keys ". $BYOBU_PREFIX/bin/byobu-reconnect-sockets" \; send-keys Enter
-bind-key -n C-S-F5 new-window -d "byobu-select-profile -r"
+bind-key -n C-M-F4 new-window -d "byobu-select-profile -r"
 bind-key -n F6 detach
 bind-key -n M-F6 run-shell '$BYOBU_PREFIX/lib/byobu/include/tmux-detach-all-but-current-client'
 bind-key -n S-F6 run-shell 'exec touch $BYOBU_RUN_DIR/no-logout' \; detach
