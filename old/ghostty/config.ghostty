@@ -1,0 +1,3 @@
+keybind = ctrl+shift+h=previous_tab
+keybind = ctrl+shift+l=next_tab
+keybind = ctrl+shift+q=close_tab:this
