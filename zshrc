@@ -132,3 +132,7 @@ command -v pyenv >/dev/null || export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 export PATH=/home/matt/.pyenv/shims:/home/matt/Scripts:/home/matt/.local/bin:/home/matt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin
 zstyle :omz:plugins:ssh-agent agent-forwarding yes
+
+#--------------- PLUGINS ---------------
+source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
