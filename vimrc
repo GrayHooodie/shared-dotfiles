@@ -19,7 +19,7 @@ runtime! archlinux.vim
 set number 
 set relativenumber 
 set wrap 
-set autoindent noexpandtab tabstop=4 shiftwidth=4 
+set autoindent noexpandtab tabstop=2 shiftwidth=2
 set ignorecase 
 set hlsearch 
 set cursorline 
