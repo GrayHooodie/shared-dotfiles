@@ -116,7 +116,6 @@ alias pods='bluetoothctl connect 50:1F:C6:81:CE:74'
 alias cans='bluetoothctl connect AC:BF:71:89:54:04'
 alias jbl='bluetoothctl connect F8:5C:7D:72:DA:96'
 alias pp='pacman -Qe'
-alias ps='pacman -Ss'
 alias pi='sudo pacman -S'
 alias u='yay; if flatpak list > /dev/null 2>&1; then flatpak update; fi; if command -v rustup; then rustup update; fi;'
 alias pr='sudo pacman -Rsn'
@@ -132,7 +131,7 @@ RANGER_LOAD_DEFAULT_RC=false
 export PYENV_ROOT=$HOME/.pyenv
 command -v pyenv >/dev/null || export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
-export PATH=/home/matt/.pyenv/shims:/home/matt/Scripts:/home/matt/.local/bin:/home/matt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin
+export PATH=/home/matt/.pyenv/shims:/home/matt/Scripts:/home/matt/.local/bin:/home/matt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:~/.local/share/gem/ruby/3.4.0/bin
 zstyle :omz:plugins:ssh-agent agent-forwarding yes
 export TERM=xterm-256color
 
