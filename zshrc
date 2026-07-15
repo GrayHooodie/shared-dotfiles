@@ -110,19 +110,18 @@ if [ $? != 0 ]; then
 fi
 alias ls='eza -lag --group-directories-first'
 alias pacman='pacman --color=auto'
-alias yay='yay --color=auto'
+alias paru='paru --color=auto'
 alias pubip='curl -4 ifconfig.me | grep -v "^%"'
 alias pods='bluetoothctl connect 50:1F:C6:81:CE:74'
 alias cans='bluetoothctl connect AC:BF:71:89:54:04'
 alias jbl='bluetoothctl connect F8:5C:7D:72:DA:96'
-alias pp='pacman -Qe'
-alias pi='sudo pacman -S'
 alias u='yay; if flatpak list > /dev/null 2>&1; then flatpak update; fi; if command -v rustup; then rustup update; fi;'
-alias pr='sudo pacman -Rsn'
 alias git='~/Scripts/zsh/git-agent'
 alias ssh='~/Scripts/zsh/ssh-agent'
 alias rm='trash'
 alias tl='trash-list'
+alias py-http-server='sudo python3 -m http.server 80'
+alias fcount='ls | wc -l'
 
 
 
