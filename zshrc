@@ -122,6 +122,7 @@ alias rm='trash'
 alias tl='trash-list'
 alias py-http-server='sudo python3 -m http.server 80'
 alias fcount='ls | wc -l'
+alias ollama='~/Scripts/autollama'
 
 
 
